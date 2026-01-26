@@ -4,6 +4,12 @@
   --color-yellow: #f4d04e;
   --color-dark-gray: #111111;
   --color-gray: #6b6b6b;
+  --font-main: "Outfit", sans-serif;
+  --font-size-lg: 24px;
+  --font-size-md: 16px;
+  --font-size-sm: 14px;
+  --font-height: 150%;
+  --font-spacing: 0px;
 }
 
 body {
@@ -15,5 +21,48 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+  }
+
+  .col-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .row-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .figtree-lg {
+    font-family: var(--font-main);
+    font-size: var(--font-size-lg);
+    line-height: var(--font-height);
+    word-spacing: var(--font-spacing);
+    font-weight: 900;
+  }
+
+  .figtree-md {
+    font-family: var(--font-main);
+    font-size: var(--font-size-md);
+    line-height: var(--font-height);
+    word-spacing: var(--font-spacing);
+  }
+
+  .figtree-sm {
+    font-family: var(--font-main);
+    font-size: var(--font-size-sm);
+    line-height: var(--font-height);
+    word-spacing: var(--font-spacing);
+  }
+
+  .figtree-sm-bold {
+    font-family: var(--font-main);
+    font-size: var(--font-size-sm);
+    line-height: var(--font-height);
+    word-spacing: var(--font-spacing);
+    font-weight: 600;
   }
 }
