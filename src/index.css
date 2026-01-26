@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --color-yellow: #f4d04e;
+  --color-dark-gray: #111111;
+  --color-gray: #6b6b6b;
+}
+
+body {
+  background-color: var(--color-yellow);
+}
+
+@layer utilities {
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
